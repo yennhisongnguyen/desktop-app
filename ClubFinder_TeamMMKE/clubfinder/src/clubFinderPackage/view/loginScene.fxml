@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="343.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clubFinderPackage.MainController">
+    <children>
+        <AnchorPane prefHeight="345.0" prefWidth="343.0" style="-fx-background-color: #212121;">
+            <children>
+                <Label layoutX="113.0" layoutY="36.0" prefHeight="46.0" prefWidth="118.0" text="Login" textAlignment="CENTER" textFill="#fffafa">
+                    <font>
+                        <Font name="Tahoma Bold" size="36.0" />
+                    </font>
+                </Label>
+                <AnchorPane layoutX="125.0" layoutY="82.0" prefHeight="5.0" prefWidth="77.0" style="-fx-background-color: #76ff03;" />
+                <TextField fx:id="txtUserName" layoutX="80.0" layoutY="119.0" prefHeight="26.0" prefWidth="209.0" promptText="Username" style="-fx-background-color: #212121; -fx-text-fill: #ffffff;">
+                    <font>
+                        <Font name="Tahoma" size="13.0" />
+                    </font>
+                    <effect>
+                        <Glow level="0.28" />
+                    </effect>
+                </TextField>
+                <PasswordField fx:id="txtPassword" layoutX="80.0" layoutY="169.0" prefHeight="28.0" prefWidth="209.0" promptText="Password" style="-fx-background-color: #212121; -fx-textfill: #ffffff;">
+                    <font>
+                        <Font name="Tahoma" size="13.0" />
+                    </font>
+                    <effect>
+                        <Glow level="0.28" />
+                    </effect>
+                </PasswordField>
+                <Label fx:id="lbStatus" layoutX="80.0" layoutY="197.0" prefHeight="17.0" prefWidth="209.0" textAlignment="CENTER" textFill="#ee0202">
+                    <font>
+                        <Font name="Tahoma" size="13.0" />
+                    </font></Label>
+                <Button fx:id="Login" layoutX="59.0" layoutY="221.0" mnemonicParsing="false" onAction="#Login" prefHeight="39.0" prefWidth="232.0" style="-fx-background-color: #76ff03; -fx-background-radius: 90;" text="Login" textFill="#fffbfb">
+                    <font>
+                        <Font name="Tahoma Bold" size="13.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="28.0" fitWidth="37.0" layoutX="43.0" layoutY="118.0">
+                    <image>
+                        <Image url="@../../../icons8-user.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="28.0" fitWidth="37.0" layoutX="43.0" layoutY="169.0">
+                    <image>
+                        <Image url="@../../../icons8-password.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="59.0" layoutY="278.0" mnemonicParsing="false" onAction="#createUser" prefHeight="39.0" prefWidth="232.0" style="-fx-background-color: #76ff03; -fx-background-radius: 90;" text="Create User" textFill="#f8f6f6">
+                    <font>
+                        <Font name="Tahoma Bold" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

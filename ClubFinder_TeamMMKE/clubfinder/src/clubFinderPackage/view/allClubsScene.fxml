@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="600.0" maxWidth="600.0" minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clubFinderPackage.MainController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="0.0" prefWidth="0.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="550.0" minWidth="10.0" prefWidth="550.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="0.0" prefWidth="0.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="538.2" minHeight="10.0" prefHeight="68.40001525878901" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="553.3999885559082" minHeight="10.0" prefHeight="476.40000000000003" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="227.8" minHeight="0.0" prefHeight="48.39999999999998" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="227.8" minHeight="10.0" prefHeight="13.399999999999977" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextArea fx:id="textOutput" prefHeight="542.0" prefWidth="600.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <Separator prefHeight="20.0" prefWidth="550.0" />
+         </children>
+      </VBox>
+      <HBox alignment="BOTTOM_CENTER" fillHeight="false" prefHeight="130.0" prefWidth="600.0" spacing="5.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#goToMenu" prefHeight="40.0" prefWidth="60.0" text="Back">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Separator orientation="VERTICAL" prefHeight="42.0" prefWidth="26.0" />
+            <Button fx:id="generate" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#generateAllClubs" prefHeight="40.0" prefWidth="200.0" text="Generate" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Separator orientation="VERTICAL" prefHeight="42.0" prefWidth="25.0" />
+            <Button fx:id="exit" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#quitClubFinder" prefHeight="40.0" prefWidth="60.0" text="Exit" textAlignment="CENTER" textFill="#bf0000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+         <children>
+            <Label text="All Clubs" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</GridPane>

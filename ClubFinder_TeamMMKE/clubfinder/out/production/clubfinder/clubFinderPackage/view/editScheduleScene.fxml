@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="600.0" maxWidth="600.0" minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clubFinderPackage.MainController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="0.0" prefWidth="0.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="550.0" minWidth="10.0" prefWidth="550.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="0.0" prefWidth="0.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="538.2" minHeight="10.0" prefHeight="68.40001525878901" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="553.3999885559082" minHeight="10.0" prefHeight="218.39999999999998" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="308.79999999999995" minHeight="10.0" prefHeight="79.39999999999998" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="308.79999999999995" minHeight="10.0" prefHeight="103.80000000000001" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="308.79999999999995" minHeight="10.0" prefHeight="72.20000000000005" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="308.79999999999995" minHeight="0.0" prefHeight="66.60000000000002" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="267.6" minHeight="4.2000000000000455" prefHeight="19.200000000000045" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="190.0" prefWidth="550.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextArea fx:id="textOutput" prefHeight="189.0" prefWidth="550.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+         </children>
+      </VBox>
+      <HBox alignment="BOTTOM_CENTER" fillHeight="false" prefHeight="130.0" prefWidth="600.0" spacing="5.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+         <children>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#goToMenu" prefHeight="40.0" prefWidth="60.0" text="Back">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Separator orientation="VERTICAL" prefHeight="42.0" prefWidth="25.0" />
+            <Button fx:id="exit" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#quitClubFinder" prefHeight="40.0" prefWidth="60.0" text="Exit" textAlignment="CENTER" textFill="#bf0000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+         <children>
+            <Label text="Edit Courses" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <children>
+            <Button fx:id="generateUserCoursesButton" mnemonicParsing="false" onAction="#generateUserCourses" prefHeight="50.0" prefWidth="200.0" text="Load Courses" />
+         </children></HBox>
+      <VBox GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="addUserCoursesButton" mnemonicParsing="false" onAction="#addUserCourses" prefHeight="50.0" prefWidth="100.0" text="Add" textAlignment="CENTER" />
+                  <Separator maxHeight="50.0" maxWidth="100.0" minHeight="50.0" minWidth="100.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="100.0" />
+                  <Button fx:id="removeUserCoursesButton" mnemonicParsing="false" onAction="#removeUserCourses" prefHeight="50.0" prefWidth="100.0" text="Delete" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="tfCourseName" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" promptText="Course Name" />
+                  <Separator maxHeight="50.0" minHeight="50.0" orientation="VERTICAL" prefHeight="50.0" />
+                  <TextField fx:id="tfDotw" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" promptText="Day of Week" />
+                  <Separator maxHeight="50.0" orientation="VERTICAL" prefHeight="50.0" />
+                  <TextField fx:id="tfStartTime" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" promptText="Start Time" />
+                  <Separator maxHeight="50.0" orientation="VERTICAL" prefHeight="50.0" />
+                  <TextField fx:id="tfEndTime" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" promptText="End Time" />
+                  <Separator maxHeight="50.0" orientation="VERTICAL" prefHeight="50.0" />
+                  <TextField fx:id="tfWeekly" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" promptText="Weekly" />
+               </children></HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</GridPane>
